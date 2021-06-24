@@ -1,0 +1,6 @@
+@import "paddings";
+.nav {
+    &__item {
+        @extend .p1;
+    }
+}
