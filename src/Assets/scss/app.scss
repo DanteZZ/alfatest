@@ -80,15 +80,19 @@ a {
 .customers {
     background-color: $c_white;
     box-shadow: $def_shadow;
-    padding: 1em;
     border-radius: $radius;
     margin-bottom: 1em;
+    overflow: hidden;
     &_item {
         display: flex;
         align-items: center;
         justify-content: space-between;
         border-bottom: 1px;
         border-color: $c_lightgray;
+        padding: 1em;
+        &__disabled {
+            background-color: $c_backred;
+        }
         &__address {
             color: $c_darkgray;
         }
@@ -141,13 +145,15 @@ a {
 }
 
 .header {
-    padding: 1em;
+    padding: .7em 1em;
     grid-area: header;
     background-color: $c_white;
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-shadow: $def_shadow;
+    position: fixed;
+    width: 100%;
 }
 
 .htext {
